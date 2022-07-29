@@ -1,0 +1,101 @@
+body{
+  font-family: arial, helvetica;
+  background: #FFF;
+}
+.seccion--arriba{
+  width: 100%;
+  height: 520px;
+  background: url(https://scontent.frel1-1.fna.fbcdn.net/v/t1.6435-9/188280648_2860580057526424_2259662578754881128_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGH3q7KTJ_WiXL8salg2JZeVNaZDzLYFvVU1pkPMtgW9QyTY66PNlHNTe25O7-wzpUPNsLI5zS6v0O6WEohbMdD&_nc_ohc=svAJB104QA4AX-5_8U1&_nc_oc=AQlwh_TbZJkNFhZveyprVFEH2GM9wGzjxtjVP_8GpvcJkUzVay8QZfskyKO-Eg6LWMQ&_nc_ht=scontent.frel1-1.fna&oh=00_AT_-kDLiRkJEyRhwbGdt0XN3eQTLamNYgTilTmQM7zv0pg&oe=62C0B84A);
+  background-size: 100vw 100vh;
+}
+.menu{
+  list-style: none;
+  padding: 0;
+  background: #FFDAFC;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  display: block;
+  margin: 0 3rem;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a:hover{
+  background: #FFFFFF;
+}
+h1{
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+@font-face {
+  font-family:ilustraciones titulo; src: url(letra2.ttf);
+}
+h1{
+  font-family:ilustraciones titulo;
+}
+.row{
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.column{
+  flex: 25%;
+  padding: 5px;
+
+}
+.column img{
+  margin-top: 5px;
+}
+@media (max-width: 800px){
+  .column{
+    flex: 50%;
+  }
+}
+@media (max-width: 600px){
+  .column{
+    flex: 100%;
+  }
+.img{
+  transition: 0,5s;
+  object-fit: cover;
+}
+.img:hover{
+  transform: 1.2;
+  }
+  *{box-sizing:border-box;}
+
+  		.container{
+  			width:95%;
+  			max-width:900px;
+  			padding:32px 64px;
+  			margin:auto;
+  		}
+
+  		.social{
+  			/*las imágenes usadas tienen width de 48px*/
+  			width:48px;
+  			position:fixed;
+  			top:50px;
+  			right:0;
+  		}
+
+  		/* Extra centrado vertical*/
+
+  		.social{
+  			/*border:1px solid #000;*/
+  			top:50%;
+  			height:205px;
+  			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+  			margin-top:-100px;
+  		}
